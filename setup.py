@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='slicer',
+    name='hiveslicer',
     version='0.1.0',
     description='Hive cube slicer server',
     author='Andrey Proskurnev',
@@ -14,5 +14,10 @@ setup(
         'sqlalchemy',
         'cherrypy',
         'pyhive[hive]',
-    ]
+    ],
+    entry_points={
+        'console_scripts': [
+            'hiveslicer = hiveslicer.scripts:main',
+        ]
+    },
 )

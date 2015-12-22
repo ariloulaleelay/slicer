@@ -1,0 +1,10 @@
+*.py[cob]
+*.swp
+*.egg-info/
+*.egg/
+
+build/
+dist/
+target/
+target
+.ropeproject
